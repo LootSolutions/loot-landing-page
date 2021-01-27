@@ -7,7 +7,9 @@ export default function Main() {
   return (
     <div id="how-view">
       <div id="how-view-content">
-        <h1>What if there was a better way?</h1>
+        <h1>
+          What if there was a <span className="highlight">better</span> way?
+        </h1>
         <div id="how-view-info">
           <div id="left-info">
             <p>A platform that let players actually own their assets. </p>
