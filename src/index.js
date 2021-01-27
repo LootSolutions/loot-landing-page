@@ -7,17 +7,17 @@ import HowView from "./Views/HowView";
 const bullets = require("./bullets.json");
 
 const sparkleSvg = require("../public/assets/svg/sparkle.svg");
-const coinSvg = require("../public/assets/svg/coin.svg");
 const diamondSvg = require("../public/assets/svg/gem.svg");
 const treasureSvg = require("../public/assets/svg/treasure.svg");
 const marketSvg = require("../public/assets/svg/market.svg");
-const chainImg = require("../public/assets/svg/chain.svg");
+const chainSvg = require("../public/assets/svg/chain.svg");
+const swordSvg = require("../public/assets/svg/sword.svg");
 
 function addBackground() {
   const numElements = 100;
   const backgroundDiv = document.getElementById("background");
 
-  let svgs = [sparkleSvg, coinSvg, diamondSvg, treasureSvg];
+  let svgs = [sparkleSvg, swordSvg, diamondSvg, treasureSvg];
 
   for (let i = 0; i < numElements; i++) {
     const svg = svgs[Math.floor(Math.random() * Math.floor(svgs.length))];
@@ -51,7 +51,7 @@ function App() {
         direction="left"
         title="The Chain"
         bullets={bullets.chain}
-        image={chainImg}
+        image={chainSvg}
       />
 
       <Page
