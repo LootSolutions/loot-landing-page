@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Page from "./Components/Page";
+import WhyView from "./Views/WhyView";
+import HowView from "./Views/HowView";
 
 const bullets = require("./bullets.json");
 
@@ -8,6 +10,8 @@ const sparkleSvg = require("../public/assets/svg/sparkle.svg");
 const coinSvg = require("../public/assets/svg/coin.svg");
 const diamondSvg = require("../public/assets/svg/gem.svg");
 const treasureSvg = require("../public/assets/svg/treasure.svg");
+const marketSvg = require("../public/assets/svg/market.svg");
+const chainImg = require("../public/assets/svg/chain.svg");
 
 function addBackground() {
   const numElements = 100;
@@ -37,20 +41,30 @@ function App() {
   return (
     <div>
       <div id="background"></div>
+      <WhyView />
+      <HowView />
       <div id="title-container">
         <h1>Loot</h1>
-        <p>
-          A blockchain platform that makes it easy to deploy your game's assets
-          as NFTs
-        </p>
+        <p>A platform that gives your game assets a power up</p>
       </div>
-      <Page direction="left" title="The Chain" bullets={bullets.chain} />
+      <Page
+        direction="left"
+        title="The Chain"
+        bullets={bullets.chain}
+        image={chainImg}
+      />
+
       <Page
         direction="right"
         title="The Developer Hub"
         bullets={bullets.devHub}
       />
-      <Page direction="left" title="The Wallet" bullets={bullets.wallet} />
+      <Page
+        direction="left"
+        title="The Wallet"
+        image={marketSvg}
+        bullets={bullets.wallet}
+      />
       <Page direction="right" title="The API" bullets={bullets.api} />
     </div>
   );

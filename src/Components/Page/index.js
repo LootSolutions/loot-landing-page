@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function Main(props) {
-  const { direction, title, bullets } = props;
+  const { direction, title, bullets, image } = props;
   return (
     <div className={`${direction}-panel`}>
       <h1>{title}</h1>
@@ -12,7 +12,7 @@ export default function Main(props) {
               <div key={bullets.indexOf(b)}>{b}</div>
             ))}
           </div>
-          <div className="image"></div>
+          <img className="image" src={image} />
         </div>
       </div>
     </div>
