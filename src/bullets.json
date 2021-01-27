@@ -1,6 +1,6 @@
 {
   "chain": [
-    "Loot is built with substrate allowing us fully optimize and tailor the platform around game development while keeping transaction fees low.",
+    "Loot is built with substrate allowing us to fully optimize and tailor the platform around game development while keeping transaction fees low.",
     "Leveraging the Polkadot ecosystem via parachains enables take advantage of the features of other parachains on the network."
   ],
   "devHub": [
@@ -9,7 +9,7 @@
     "Track asset purchases, sales, and revenue of each of your assets."
   ],
   "wallet": [
-    "Our fully featured wallet allows users to interact with our blockchain in a form factor they’re familiar with.",
+    "Our fully featured wallet allows players to interact with our blockchain in a form factor they’re familiar with.",
     "Launch games, change usernames, buy assets, and sell assets. Getting started on Loot is as easy as creating an account."
   ],
   "api": [
