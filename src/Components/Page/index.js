@@ -1,9 +1,9 @@
 import React from "react";
 
 export default function Main(props) {
-  const { direction, title, bullets, image } = props;
+  const { direction, title, bullets, image, section } = props;
   return (
-    <div className={`${direction}-panel`}>
+    <div id={section} className={`${direction}-panel`}>
       <h1>{title}</h1>
       <div className={`${direction}-panel-content`}>
         <div className={`${direction}-panel-info`}>

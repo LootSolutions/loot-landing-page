@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import Page from "./Components/Page";
 import WhyView from "./Views/WhyView";
 import HowView from "./Views/HowView";
+import Topbar from "./Components/Topbar";
 
 const bullets = require("./bullets.json");
 
@@ -37,35 +38,68 @@ function addBackground() {
   }
 }
 
+function topBarHide() {
+  const scrollPercentage =
+    (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+
+  const sidebar = document.getElementById("topbar");
+
+  if (!sidebar) {
+    console.log("test");
+    return;
+  }
+
+  if (scrollPercentage > 4) {
+    sidebar.classList.remove("opaque");
+    sidebar.classList.add("transparent");
+  } else {
+    sidebar.classList.remove("transparent");
+    sidebar.classList.add("opaque");
+  }
+}
+
+window.addEventListener("scroll", () => topBarHide());
+
 function App() {
   return (
-    <div>
-      <div id="background"></div>
-      <WhyView />
-      <HowView />
-      <div id="title-container">
-        <h1>Loot</h1>
-        <p>A platform that gives your game assets a power up</p>
-      </div>
-      <Page
-        direction="left"
-        title="The Chain"
-        bullets={bullets.chain}
-        image={chainSvg}
-      />
+    <div id="app">
+      <Topbar />
+      <div id="content">
+        <div id="background"></div>
+        <div id="home">
+          <h1>Loot</h1>
+          <p>A platform that gives your game assets a power up</p>
+        </div>
+        <WhyView />
+        <HowView />
+        <Page
+          section="chain"
+          direction="left"
+          title="The Chain"
+          bullets={bullets.chain}
+          image={chainSvg}
+        />
 
-      <Page
-        direction="right"
-        title="The Developer Hub"
-        bullets={bullets.devHub}
-      />
-      <Page
-        direction="left"
-        title="The Wallet"
-        image={marketSvg}
-        bullets={bullets.wallet}
-      />
-      <Page direction="right" title="The API" bullets={bullets.api} />
+        <Page
+          section="hub"
+          direction="right"
+          title="The Developer Hub"
+          bullets={bullets.devHub}
+        />
+        <Page
+          section="wallet"
+          direction="left"
+          title="The Wallet"
+          image={marketSvg}
+          bullets={bullets.wallet}
+        />
+        <Page
+          section="api"
+          direction="right"
+          title="The API"
+          bullets={bullets.api}
+        />
+      </div>
     </div>
   );
 }
