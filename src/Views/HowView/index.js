@@ -8,12 +8,17 @@ export default function Main() {
     <div id="how-view">
       <div id="how-view-content">
         <h1>
-          What if there was a <span className="highlight">better</span> way?
+          A <span className="highlight">Win-Win</span> Solution
         </h1>
         <div id="how-view-info">
           <div id="left-info">
-            <p>A platform that let players actually own their assets. </p>
-            <p>A way for their loot to outlive the game they belong to.</p>
+            <p>
+              A <span className="highlight">Marketplace</span> for{" "}
+              <span className="highlight">player owned</span> assets
+            </p>
+            <p>
+              A <span className="highlight">Chest</span> to store them
+            </p>
           </div>
           <img id="how-svg" src={lockClosedSvg} />
           <div id="right-info">

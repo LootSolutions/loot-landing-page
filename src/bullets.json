@@ -4,15 +4,15 @@
     "Leveraging the Polkadot ecosystem via parachains enables take advantage of the features of other parachains on the network."
   ],
   "devHub": [
-    "Easily create new new game assets for players to buy in the marketplace.",
-    "Track asset purchases, sales, and revenue of each of your assets."
+    "Easily create new new game items for players to buy in the marketplace.",
+    "Track Loot purchases, sales, and revenue of each of your Loot assets."
   ],
   "wallet": [
     "Our fully featured wallet allows players to interact with our blockchain in a form factor they’re familiar with.",
-    "Launch games, change usernames, buy assets, and sell assets. Getting started on Loot is as easy as creating an account."
+    "Launch games, change usernames, buy items, and sell items. Getting started on Loot is as easy as creating an account."
   ],
   "api": [
-    "Loot offers a familiar and easy to use API for game developers making it easy to incorporate Loot NFTs into their games without any knowledge of blockchain programming.",
-    "The REST API server is built into the wallet to offer a convenient and safe way for game developers to bring assets into their games without having to do do any server side programming."
+    "Loot offers a familiar and easy to use API for game developers making it easy to incorporate Loot assets into their games without <em>any</em> knowledge of blockchain.",
+    "The REST API server is built into the wallet to offer a convenient and safe way for game developers to bring items into their games without having to do do any server side programming."
   ]
 }

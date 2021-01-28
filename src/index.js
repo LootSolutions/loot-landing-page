@@ -70,7 +70,9 @@ function App() {
         <div id="background"></div>
         <div id="home">
           <h1>Loot</h1>
-          <p>A platform that gives your game assets a power up</p>
+          <p>
+            Unlock the <em>value</em> of your <b>Game Items</b>
+          </p>
         </div>
         <WhyView />
         <HowView />
