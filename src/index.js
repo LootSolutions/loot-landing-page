@@ -13,6 +13,7 @@ const treasureSvg = require("../public/assets/svg/treasure.svg");
 const marketSvg = require("../public/assets/svg/market.svg");
 const chainSvg = require("../public/assets/svg/chain.svg");
 const swordSvg = require("../public/assets/svg/sword.svg");
+const apiSvg = require("../public/assets/svg/API.svg");
 
 function addBackground() {
   const numElements = 100;
@@ -83,7 +84,7 @@ function App() {
         <Page
           section="hub"
           direction="right"
-          title="The Developer Hub"
+          title="The Developer Studio"
           bullets={bullets.devHub}
         />
         <Page
@@ -97,6 +98,7 @@ function App() {
           section="api"
           direction="right"
           title="The API"
+          image={apiSvg}
           bullets={bullets.api}
         />
       </div>
