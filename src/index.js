@@ -8,8 +8,6 @@ import ChestView from "./Views/ChestView";
 import StudioView from "./Views/StudioView";
 import ChainView from "./Views/ChainView";
 
-const bullets = require("./bullets.json");
-
 const sparkleSvg = require("../public/assets/svg/sparkle.svg");
 const diamondSvg = require("../public/assets/svg/gem.svg");
 const treasureSvg = require("../public/assets/svg/treasure.svg");
