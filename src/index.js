@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ReactDOM from "react-dom";
 import WhyView from "./Views/WhyView";
 import HowView from "./Views/HowView";
@@ -63,6 +63,35 @@ window.addEventListener("scroll", (event) => {
 });
 
 function App() {
+  let options = {
+    rootMargin: "0px",
+    threshold: 0.5,
+  };
+
+  const createObserver = (elemId) => {
+    let observer = new IntersectionObserver((entries, observer) => {
+      if (entries.length > 0) {
+        if (entries[0].isIntersecting) {
+          const button = document.getElementById(`${elemId}-button`);
+          document.querySelector(".clicked").classList.remove("clicked");
+          button.classList.add("clicked");
+        }
+      }
+    }, options);
+
+    let target = document.getElementById(elemId);
+    observer.observe(target);
+  };
+
+  useEffect(() => {
+    createObserver("chest");
+    createObserver("why-view");
+    createObserver("home");
+    createObserver("chain");
+    createObserver("api");
+    createObserver("studio");
+  }, []);
+
   return (
     <div id="app">
       <Topbar />

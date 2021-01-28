@@ -5,6 +5,7 @@ const studioSvg = require("../../../public/assets/svg/studio.svg");
 
 export default function Main(props) {
   const { direction } = props;
+
   return (
     <div id="studio" className={`${direction}-panel`}>
       <h1>The Studio</h1>

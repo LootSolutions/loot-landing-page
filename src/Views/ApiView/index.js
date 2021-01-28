@@ -5,6 +5,7 @@ const chainSvg = require("../../../public/assets/svg/chain.svg");
 
 export default function Main(props) {
   const { direction } = props;
+
   return (
     <div id="api" className={`${direction}-panel`}>
       <h1>The API</h1>

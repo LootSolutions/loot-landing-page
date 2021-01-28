@@ -5,6 +5,7 @@ const walletSvg = require("../../../public/assets/svg/market.svg");
 
 export default function Main(props) {
   const { direction } = props;
+
   return (
     <div id="chest" className={`${direction}-panel`}>
       <h1>The Chest</h1>
