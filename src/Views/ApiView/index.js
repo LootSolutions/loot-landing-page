@@ -10,17 +10,16 @@ export default function Main(props) {
         <div className={`${direction}-panel-info`}>
           <div className="bullet-points">
             <p>
-              Loot offers a familiar and easy to use{" "}
+              Loot exposes a robust and <em>extremely simple</em>{" "}
               <a href="https://app.swaggerhub.com/apis-docs/Loot5/NFTAPI/1.0.0">
-                API
+                REST API
               </a>{" "}
-              for game developers making it easy to incorporate Loot NFTs into
-              their games without any knowledge of blockchain programming.
-            </p>
-            <p>
-              The REST API server is built into the wallet to offer a convenient
-              and safe way for game developers to bring assets into their games
-              without having to do do any server side programming.
+              for developers to incorporate Loot assets into <b>any game</b>{" "}
+              new, or pre-existing, with just a{" "}
+              <b>
+                <em>few lines of code</em>
+              </b>
+              .
             </p>
           </div>
           <img className="image" src={image} />
