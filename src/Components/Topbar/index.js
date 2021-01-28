@@ -33,14 +33,14 @@ export default function Main() {
           Chain
         </a>
         <a
-          href="#hub"
+          href="#studio"
           className={highlighted == "hub" ? "clicked" : null}
           onClick={() => setHighlighted("hub")}
         >
           Studio
         </a>
         <a
-          href="#wallet"
+          href="#chest"
           className={highlighted == "wallet" ? "clicked" : null}
           onClick={() => setHighlighted("wallet")}
         >
