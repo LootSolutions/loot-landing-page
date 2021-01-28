@@ -4,6 +4,7 @@ import Page from "./Components/Page";
 import WhyView from "./Views/WhyView";
 import HowView from "./Views/HowView";
 import Topbar from "./Components/Topbar";
+import ApiView from "./Views/ApiView";
 
 const bullets = require("./bullets.json");
 
@@ -94,12 +95,11 @@ function App() {
           image={marketSvg}
           bullets={bullets.wallet}
         />
-        <Page
+        <ApiView
           section="api"
           direction="right"
           title="The API"
           image={apiSvg}
-          bullets={bullets.api}
         />
       </div>
     </div>
