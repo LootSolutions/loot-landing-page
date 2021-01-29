@@ -1,14 +1,14 @@
 import React from "react";
 import "./style.scss";
 
-const chainSvg = require("../../../public/assets/svg/chain.svg");
+const studioSvg = require("../../../public/assets/svg/studio.svg");
 
 export default function Main(props) {
   const { direction } = props;
 
   return (
-    <div id="api" className={`${direction}-panel`}>
-      <h1>The API</h1>
+    <div id="studio" className={`${direction}-panel`}>
+      <h1>The Studio</h1>
       <div className={`${direction}-panel-content`}>
         <div className={`${direction}-panel-info`}>
           <div className="bullet-points">
@@ -25,7 +25,7 @@ export default function Main(props) {
               .
             </p>
           </div>
-          <img className="image" src={chainSvg} />
+          <img className="image" src={studioSvg} />
         </div>
       </div>
     </div>

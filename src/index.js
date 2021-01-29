@@ -1,21 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ReactDOM from "react-dom";
-import Page from "./Components/Page";
 import WhyView from "./Views/WhyView";
 import HowView from "./Views/HowView";
 import Topbar from "./Components/Topbar";
 import ApiView from "./Views/ApiView";
-
-const bullets = require("./bullets.json");
+import ChestView from "./Views/ChestView";
+import StudioView from "./Views/StudioView";
+import ChainView from "./Views/ChainView";
 
 const sparkleSvg = require("../public/assets/svg/sparkle.svg");
 const diamondSvg = require("../public/assets/svg/gem.svg");
 const treasureSvg = require("../public/assets/svg/treasure.svg");
-const marketSvg = require("../public/assets/svg/market.svg");
-const chainSvg = require("../public/assets/svg/chain.svg");
 const swordSvg = require("../public/assets/svg/sword.svg");
-const apiSvg = require("../public/assets/svg/API.svg");
-const studioSvg = require("../public/assets/svg/studio.svg");
 
 function addBackground() {
   const numElements = 100;
@@ -61,9 +57,41 @@ function topBarHide() {
   }
 }
 
-window.addEventListener("scroll", () => topBarHide());
+window.addEventListener("scroll", (event) => {
+  window.href = "#chain";
+  topBarHide();
+});
 
 function App() {
+  let options = {
+    rootMargin: "0px",
+    threshold: 0.5,
+  };
+
+  const createObserver = (elemId) => {
+    let observer = new IntersectionObserver((entries, observer) => {
+      if (entries.length > 0) {
+        if (entries[0].isIntersecting) {
+          const button = document.getElementById(`${elemId}-button`);
+          document.querySelector(".clicked").classList.remove("clicked");
+          button.classList.add("clicked");
+        }
+      }
+    }, options);
+
+    let target = document.getElementById(elemId);
+    observer.observe(target);
+  };
+
+  useEffect(() => {
+    createObserver("chest");
+    createObserver("why-view");
+    createObserver("home");
+    createObserver("chain");
+    createObserver("api");
+    createObserver("studio");
+  }, []);
+
   return (
     <div id="app">
       <Topbar />
@@ -75,36 +103,12 @@ function App() {
             Unlock the <em>value</em> of your <b>Game Items</b>
           </p>
         </div>
-        <WhyView />
-        <HowView />
-        <Page
-          section="chain"
-          direction="left"
-          title="The Chain"
-          bullets={bullets.chain}
-          image={chainSvg}
-        />
-
-        <Page
-          section="hub"
-          direction="right"
-          title="The Developer Studio"
-          bullets={bullets.devHub}
-          image={studioSvg}
-        />
-        <Page
-          section="wallet"
-          direction="left"
-          title="The Wallet"
-          image={marketSvg}
-          bullets={bullets.wallet}
-        />
-        <ApiView
-          section="api"
-          direction="right"
-          title="The API"
-          image={apiSvg}
-        />
+        <WhyView direction="left" />
+        <HowView direction="right" />
+        <ChainView direction="left" />
+        <StudioView direction="right" />
+        <ChestView direction="left" />
+        <ApiView direction="right" />
       </div>
     </div>
   );

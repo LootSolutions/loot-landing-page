@@ -1,56 +1,31 @@
-import React, { useState } from "react";
+import React from "react";
 import "./style.scss";
 
 const logo = require("../../../public/assets/icon/logo.png");
 
 export default function Main() {
-  const [highlighted, setHighlighted] = useState("home");
   return (
     <div id="topbar">
       <div id="name">
         <div>Loot</div>
       </div>
       <div id="links">
-        <a
-          href="#home"
-          className={highlighted == "home" ? "clicked" : null}
-          onClick={() => setHighlighted("home")}
-        >
+        <a id="home-button" href="#home" className="clicked">
           Home
         </a>
-        <a
-          href="#why-view"
-          className={highlighted == "why" ? "clicked" : null}
-          onClick={() => setHighlighted("why")}
-        >
+        <a id="why-view-button" href="#why-view">
           Why
         </a>
-        <a
-          href="#chain"
-          className={highlighted == "chain" ? "clicked" : null}
-          onClick={() => setHighlighted("chain")}
-        >
+        <a id="chain-button" href="#chain">
           Chain
         </a>
-        <a
-          href="#hub"
-          className={highlighted == "hub" ? "clicked" : null}
-          onClick={() => setHighlighted("hub")}
-        >
+        <a id="studio-button" href="#studio">
           Studio
         </a>
-        <a
-          href="#wallet"
-          className={highlighted == "wallet" ? "clicked" : null}
-          onClick={() => setHighlighted("wallet")}
-        >
+        <a id="chest-button" href="#chest">
           Chest
         </a>
-        <a
-          href="#api"
-          className={highlighted == "api" ? "clicked" : null}
-          onClick={() => setHighlighted("api")}
-        >
+        <a id="api-button" href="#api">
           API
         </a>
       </div>
