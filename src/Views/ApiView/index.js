@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.scss";
 
-const chainSvg = require("../../../public/assets/svg/chain.svg");
+const apiSvg = require("../../../public/assets/svg/API.svg");
 
 export default function Main(props) {
   const { direction } = props;
@@ -25,7 +25,7 @@ export default function Main(props) {
               .
             </p>
           </div>
-          <img className="image" src={chainSvg} />
+          <img className="image" src={apiSvg} />
         </div>
       </div>
     </div>
