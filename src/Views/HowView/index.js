@@ -13,7 +13,7 @@ export default function Main() {
         <div id="how-view-info">
           <div id="left-info">
             <p>
-              A <span className="highlight">Marketplace</span> for{" "}
+              A <span className="highlight"> Marketplace</span> for{" "}
               <span className="highlight">player owned</span> assets
             </p>
             <p>
@@ -22,10 +22,9 @@ export default function Main() {
           </div>
           <img id="how-svg" src={lockClosedSvg} />
           <div id="right-info">
-            <p>A place where where players could buy, and sell their loot.</p>
+            <p> A performant and simple API to interface with our platform.</p>
             <p>
-              A solution to microtransactions that still lets game studios make
-              money
+              A Royalty solution that reflects creator value and incentivizes platform development.
             </p>
           </div>
         </div>
