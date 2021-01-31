@@ -9,38 +9,31 @@ export default function Main() {
       <div id="why-view-content">
         <div id="why-view-title">
           <h1>
-            In-game items are <span id="highlight-minus">valuable</span>
+            In-game assets are <span id="highlight-minus">valuable.</span>
           </h1>
           <p>
-            Players <span id="highlight-plus">demand</span> to be{" "}
-            <span id="highlight-plus">free</span> to{" "}
-            <span id="highlight-plus">capitalize</span> on in-game assets that
-            they <em>own</em>.
+            Players should fully own <span id="highlight-plus"> purchased game assets </span> and trade them freely.
           </p>
         </div>
         <div id="divider">
           <div className="bullet-points">
             <img src={lockClosedSvg} />
             <p>
-              Players are <span id="highlight-minus">forced</span> to use{" "}
-              <span id="highlight-minus">restricted</span> in-game marketplaces
+               Players are forced to trade on <span id="highlight-minus">restricted markets</span> without true ownership.
             </p>
           </div>
           <div className="bullet-points">
             <img src={lockClosedSvg} />
             <p className="long-paragraph">
-              <b>Outside marketplaces</b> fill the gap
-              <span id="highlight-minus">frustrating</span> players <br></br>{" "}
-              and keeping creators <span id="highlight-minus">in the dark</span>
+              Frustrated players trade on external markets without creator 
+              <span id="highlight-minus"> permission </span> and often encountering <span id="highlight-minus"> fraud </span>.
             </p>
           </div>
           <div className="bullet-points">
             <img src={lockClosedSvg} />
             <p className="long-paragraph">
-              Creators are <span id="highlight-minus">cut out</span> in sharing
-              value
-              <br></br>
-              <em>derived</em> from their work
+              Developers and Creators do not receive <span id="highlight-minus">Royalties</span> that reflect the
+              value <em>derived</em> from their work.
             </p>
           </div>
         </div>

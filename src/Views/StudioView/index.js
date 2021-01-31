@@ -13,16 +13,13 @@ export default function Main(props) {
         <div className={`${direction}-panel-info`}>
           <div className="bullet-points">
             <p>
-              Loot exposes a robust and <em>extremely simple</em>{" "}
-              <a href="https://app.swaggerhub.com/apis-docs/Loot5/NFTAPI/1.0.0">
-                REST API
-              </a>{" "}
-              for developers to incorporate Loot assets into <b>any game</b>{" "}
-              new, or pre-existing, with just a{" "}
-              <b>
-                <em>few lines of code</em>
-              </b>
-              .
+              Easily create new game assets for players to buy in the marketplace.
+            </p>
+            <p>
+              For every asset transaction, a royalty is transferred to the game creator.
+            </p>
+            <p>
+              Analytics to track asset purchases, sales, and revenue.
             </p>
           </div>
           <img className="image" src={studioSvg} />
