@@ -1,0 +1,60 @@
+#footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 256px;
+
+  #links {
+    > a {
+      margin-left: 48px;
+      margin-right: 48px;
+
+      font-size: 32px;
+      color: #81defd;
+      font-family: "Overpass";
+      text-decoration: none;
+    }
+  }
+
+  #logos {
+    .rounded-img {
+      border-radius: 100%;
+    }
+
+    #loot-logo {
+      width: 56px;
+      height: 56px;
+    }
+
+    img {
+      width: 48px;
+      height: 48px;
+
+      margin: 24px;
+    }
+  }
+
+  #contact {
+    > * {
+      margin-left: 96px;
+      margin-right: 96px;
+    }
+
+    > a {
+      text-decoration: none;
+      font-family: "Exo 2";
+      font-size: 16px;
+      color: #81defd;
+    }
+
+    > span {
+      text-decoration: none;
+      font-family: "Exo 2";
+      font-size: 16px;
+      font-weight: lighter;
+      color: #81defd;
+    }
+  }
+}

@@ -7,6 +7,7 @@ import ApiView from "./Views/ApiView";
 import ChestView from "./Views/ChestView";
 import StudioView from "./Views/StudioView";
 import ChainView from "./Views/ChainView";
+import FooterView from "./Views/FooterView";
 
 const sparkleSvg = require("../public/assets/svg/sparkle.svg");
 const diamondSvg = require("../public/assets/svg/gem.svg");
@@ -99,9 +100,7 @@ function App() {
         <div id="background"></div>
         <div id="home">
           <h1>Loot</h1>
-          <p>
-            Unlock the Value of Player-Owned Game Assets
-          </p>
+          <p>Unlock the Value of Player-Owned Game Assets</p>
         </div>
         <WhyView direction="left" />
         <HowView direction="right" />
@@ -109,6 +108,7 @@ function App() {
         <StudioView direction="right" />
         <ChestView direction="left" />
         <ApiView direction="right" />
+        <FooterView />
       </div>
     </div>
   );
