@@ -1,7 +1,7 @@
 # Loot Landing Page &middot; [![GitHub license](https://img.shields.io/badge/license-GPL3%2FApache2-blue)](#LICENCE)
 
 <p align="center">
-  <img width="20%" src="./src/assets/Loot_Logo_1k.png">
+  <img width="20%" src="./public/assets/Loot_Logo_1k.png">
 </p>
 
 <p align="center"><b>The Loot Solutions Landing Page</b></p>
