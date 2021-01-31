@@ -9,10 +9,15 @@
 ---
 
 ## Development
+1) `yarn`
+2) `yarn serve`
+3) Navigate to `localhost:1234` in your browser.
 
 ### Build
+1) `yarn build`
 
 ## Running
+1) Launch `dist/index.html` after building.
 
 ## License
 
