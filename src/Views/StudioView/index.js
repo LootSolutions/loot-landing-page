@@ -16,7 +16,7 @@ export default function Main(props) {
               Easily create new game assets for players to buy in the marketplace.
             </p>
             <p>
-              For every asset sold, a royalty is transferred to the game creator.
+              For every asset transaction, a royalty is transferred to the game creator.
             </p>
             <p>
               Analytics to track asset purchases, sales, and revenue.

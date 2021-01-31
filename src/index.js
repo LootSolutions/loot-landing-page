@@ -100,7 +100,7 @@ function App() {
         <div id="home">
           <h1>Loot</h1>
           <p>
-            Royalty Based Platform that unlocks the value of Game Assets
+            Unlock the Value of Player-Owned Game Assets
           </p>
         </div>
         <WhyView direction="left" />

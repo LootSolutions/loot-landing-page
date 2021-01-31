@@ -9,34 +9,31 @@ export default function Main() {
       <div id="why-view-content">
         <div id="why-view-title">
           <h1>
-            Game Developers need better <span id="highlight-minus">incentives.</span>
+            In-game assets are <span id="highlight-minus">valuable.</span>
           </h1>
           <p>
-            BlockChain Gaming Platforms have trouble <span id="highlight-plus"> attracting and retaining </span>
-            game developers.
+            Players should fully own <span id="highlight-plus"> purchased game assets </span> and trade them freely.
           </p>
         </div>
         <div id="divider">
           <div className="bullet-points">
             <img src={lockClosedSvg} />
             <p>
-              Developers are <span id="highlight-minus">deterred</span> by performance and UX issues.
+               Players are forced to trade on <span id="highlight-minus">restricted markets</span> without true ownership.
             </p>
           </div>
           <div className="bullet-points">
             <img src={lockClosedSvg} />
             <p className="long-paragraph">
-              <b>In game assets</b> are traded on External Marketplaces without developer or creator
-              <span id="highlight-minus"> permission </span>.
+              Frustrated players trade on external markets without creator 
+              <span id="highlight-minus"> permission </span> and often encountering <span id="highlight-minus"> fraud </span>.
             </p>
           </div>
           <div className="bullet-points">
             <img src={lockClosedSvg} />
             <p className="long-paragraph">
               Developers and Creators do not receive <span id="highlight-minus">Royalties</span> that reflect the
-              value
-              <br></br>
-              <em>derived</em> from their work.
+              value <em>derived</em> from their work.
             </p>
           </div>
         </div>
