@@ -1,6 +1,4 @@
 import React from "react";
-import "./style.scss";
-
 const walletSvg = require("../../../public/assets/svg/market.svg");
 
 export default function Main(props) {
