@@ -13,7 +13,10 @@ export default function Main(props) {
           <div className="bullet-points">
             <p>
               Loot exposes a robust and extremely simple{" "}
-              <a href="https://app.swaggerhub.com/apis-docs/Loot5/NFTAPI/1.0.0">
+              <a
+                href="https://app.swaggerhub.com/apis-docs/Loot5/NFTAPI/1.0.0"
+                target="_blank"
+              >
                 REST API
               </a>{" "}
               for developers to incorporate Loot assets into <b>any game</b>{" "}

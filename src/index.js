@@ -111,16 +111,16 @@ function App() {
           <h1>Loot</h1>
           <p>Unlock the Value of Player-Owned Game Assets</p>
         </div>
+        <WhyView direction="left" />
+        <HowView direction="right" />
         <div id="video-container">
           <iframe
             src="https://www.youtube.com/embed/uku9y277OP8"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
         </div>
-        <WhyView direction="left" />
-        <HowView direction="right" />
         <ChainView direction="left" />
         <StudioView direction="right" />
         <ChestView direction="left" />

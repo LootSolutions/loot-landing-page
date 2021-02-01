@@ -13,7 +13,12 @@ export default function Main() {
         <a href="https://www.github.com/LootSolutions" target="_blank">
           Github
         </a>
-        <a>Docs</a>
+        <a
+          href="https://docs.google.com/document/d/16-fhGXsGlydC2AbV3vQ-E8ggs59LyICx3kxD566w9xU/edit?usp=sharing"
+          target="_blank"
+        >
+          Whitepaper
+        </a>
         <a
           href="https://app.swaggerhub.com/apis-docs/Loot5/NFTAPI/1.0.0"
           target="_blank"
