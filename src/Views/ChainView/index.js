@@ -26,8 +26,8 @@ export default function Main(props) {
                 {" "}
                 Polkadot{" "}
               </a>{" "}
-              ecosystem via parachains enables take advantage of the features of
-              other parachains on the network.
+              ecosystem via parachains allows us to take advantage of the
+              features of other parachains on the network.
             </p>
           </div>
           <img id="small-image" className="image" src={apiSvg} />
