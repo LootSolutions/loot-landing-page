@@ -13,6 +13,10 @@
 
   background-color: #323f4b;
 
+  @media only screen and (max-width: 600px) {
+    justify-content: center;
+  }
+
   #links {
     display: flex;
     flex-direction: row;
