@@ -14,7 +14,7 @@ export default function Main() {
           Github
         </a>
         <a
-          href="https://docs.google.com/document/d/16-fhGXsGlydC2AbV3vQ-E8ggs59LyICx3kxD566w9xU/edit?usp=sharing"
+          href="https://docs.google.com/document/d/1-0lHJqlAAkNKrWEkVoMh9r0hRiBVIeCCDPMDagFtnAE/edit?usp=sharing"
           target="_blank"
         >
           Whitepaper
