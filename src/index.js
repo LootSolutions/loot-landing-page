@@ -15,7 +15,16 @@ const treasureSvg = require("../public/assets/svg/treasure.svg");
 const swordSvg = require("../public/assets/svg/sword.svg");
 
 function addBackground() {
-  const numElements = 100;
+  let numElements = 100;
+
+  if (
+    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent
+    )
+  ) {
+    numElements = 25;
+  }
+
   const backgroundDiv = document.getElementById("background");
 
   let svgs = [sparkleSvg, swordSvg, diamondSvg, treasureSvg];

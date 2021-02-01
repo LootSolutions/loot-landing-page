@@ -6,6 +6,10 @@
 
   height: 256px;
 
+  @media only screen and (max-width: 600px) {
+    height: 196px;
+  }
+
   #links {
     > a {
       margin-left: 48px;
@@ -15,6 +19,12 @@
       color: #81defd;
       font-family: "Overpass";
       text-decoration: none;
+
+      @media only screen and (max-width: 600px) {
+        margin-left: 24px;
+        margin-right: 24px;
+        font-size: 16px;
+      }
     }
   }
 
@@ -33,6 +43,10 @@
       height: 48px;
 
       margin: 24px;
+
+      @media only screen and (max-width: 600px) {
+        margin: 12px;
+      }
     }
   }
 
@@ -40,6 +54,11 @@
     > * {
       margin-left: 96px;
       margin-right: 96px;
+
+      @media only screen and (max-width: 600px) {
+        margin-left: 24px;
+        margin-right: 24px;
+      }
     }
 
     > a {

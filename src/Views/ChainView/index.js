@@ -1,5 +1,4 @@
 import React from "react";
-import "./style.scss";
 
 const apiSvg = require("../../../public/assets/svg/chain.svg");
 
@@ -12,14 +11,26 @@ export default function Main(props) {
       <div className={`${direction}-panel-content`}>
         <div className={`${direction}-panel-info`}>
           <div className="bullet-points">
-          <p>
-            Loot is built with <a href="https://substrate.dev/" target = "_blank"> substrate </a> allowing us to fully optimize and tailor the platform around game development while keeping transaction fees low.
-          </p>
-          <p>
-             Leveraging the <a href="https://polkadot.network/" target = "_blank"> Polkadot </a> ecosystem via parachains enables take advantage of the features of other parachains on the network.
-          </p>
+            <p>
+              Loot is built with{" "}
+              <a href="https://substrate.dev/" target="_blank">
+                {" "}
+                substrate{" "}
+              </a>{" "}
+              allowing us to fully optimize and tailor the platform around game
+              development while keeping transaction fees low.
+            </p>
+            <p>
+              Leveraging the{" "}
+              <a href="https://polkadot.network/" target="_blank">
+                {" "}
+                Polkadot{" "}
+              </a>{" "}
+              ecosystem via parachains enables take advantage of the features of
+              other parachains on the network.
+            </p>
           </div>
-          <img className="image" src={apiSvg} />
+          <img id="small-image" className="image" src={apiSvg} />
         </div>
       </div>
     </div>

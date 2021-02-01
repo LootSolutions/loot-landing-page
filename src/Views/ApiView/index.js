@@ -1,5 +1,4 @@
 import React from "react";
-import "./style.scss";
 
 const apiSvg = require("../../../public/assets/svg/API.svg");
 
@@ -21,7 +20,7 @@ export default function Main(props) {
               new, or pre-existing, with just a <b>few lines of code</b>.
             </p>
           </div>
-          <img className="image" src={apiSvg} />
+          <img id="small-image" className="image" src={apiSvg} />
         </div>
       </div>
     </div>
