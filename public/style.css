@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700;800&family=Overpass:wght@700&display=swap");
 
 @keyframes bob {
@@ -63,7 +63,7 @@ body {
   font-size: 36px;
   font-family: "Exo 2";
   line-height: 36px;
-  color: #035388;
+  color: #b3ecff;
 }
 
 #right-info > p {
@@ -72,8 +72,7 @@ body {
   color: #81defd;
   line-height: 36px;
   text-align: right;
-
-  color: #b3ecff;
+  color: #035388;
 }
 
 #home {
